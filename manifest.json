@@ -7,7 +7,7 @@
 		- Changing all infomation of cars at once
 		- QuickSearch from the route data
 		- Easy inputing route data & fare data",
-	"version": "1.5.0",
+	"version": "1.7.1",
 
 	"icons": {
 		"16": "icon16.png",
@@ -67,13 +67,7 @@
 		"*://*.bustago.or.kr/*"
 	],
 	"web_accessible_resources": [
-		"thirdparty/*",
-		"fare.css",
-		"route.css",
-		"terminal.css",
-		"fare.js",
-		"scroll.js",
-		"list.js",
-		"list-injected.js"
+		"list-injected.js",
+		"route-injected.js"
 	]
 }

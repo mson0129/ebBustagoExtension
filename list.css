@@ -11,3 +11,19 @@ table#mainTable span.buttonIn, table#mainTable span.buttonSave, table#mainTable 
 	table#mainTable span.buttonDel > a:hover {background-color: #FFF; color: #BC3636;}
 
 	div.top > table > tbody > tr:last-child {display: none;}
+
+	form.fixed {display: block; position: fixed; z-index: 9999; top: 0; right: 0; left: 0; padding: 0.5em; background-color: rgba(55, 55, 55, 0.8); box-shadow: 0 0 5px #888; font-size: 0.8em; color: #FFF;}
+		form.fixed input {padding: 0.2em 0.5em; border: 0; border-radius: 2em; margin: 0;}
+		form.fixed span {padding: 0; border: 0; margin: 0; background-color: transparent;}
+		form.fixed span.button > a, form.fixed span.buttonIn > a, form.fixed span.buttonSave > a, form.fixed span.buttonDel > a {display: inline-block;}
+		
+		form.fixed span > a {padding: 0.2em 0.5em; border-radius: 2em; color: #FFF; text-decoration: none;}
+		form.fixed span.button > a {background-color: #777;}
+		form.fixed span.button > a:hover {background-color: rgb(52, 118, 220);}
+		form.fixed span.buttonIn > a {border: 1px solid #2E7FC2; background-color: #2E7FC2;}
+		form.fixed span.buttonIn > a:hover {background-color: #FFF; color: #2E7FC2;}
+		form.fixed span.buttonSave > a {border: 1px solid #829D1F; background-color: #829D1F;}
+		form.fixed span.buttonSave > a:hover {background-color: #FFF; color: #829D1F;}
+		form.fixed span.buttonDel > a {border: 1px solid #BC3636; background-color: #BC3636;}
+		form.fixed span.buttonDel > a:hover {background-color: #FFF; color: #BC3636;}
+		

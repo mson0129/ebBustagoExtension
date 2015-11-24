@@ -42,7 +42,7 @@ newLayer1.appendChild(updateBtn2);
 var newLayer2 = document.createElement("div");
 newLayer2.setAttribute("id", "changeAllLayer");
 
-var newLayer2Description = document.createTextNode("Change at Once: ");
+var newLayer2Description = document.createTextNode("일괄 변경: ");
 newLayer2.appendChild(newLayer2Description);
 
 var div_cd = document.getElementById("div_cd").cloneNode(true);
@@ -81,8 +81,20 @@ $('input#tot_seat_cnt_all').on('input', function () {
 //17NOV2015
 $("select#div_cd, select#bus_type, select#status, input#tot_seat_cnt, input#tot_seat_cnt_all, select#bus_seat_type").on("change", function() {
 	updateBtn.style.backgroundColor = "#829D1F";
+	$("select#div_cd, select#bus_type, select#status, input#tot_seat_cnt, input#tot_seat_cnt_all, select#bus_seat_type").off();
 });
 
-$("#dep_time, #distance, #dist_time").on("change", function() {
+$("#dep_time, #distance, #dist_time").on("input", function() {
 	updateBtn2.style.backgroundColor = "#829D1F";
+	$("#dep_time, #distance, #dist_time").off();
 });
+
+//Michael Son(mson0129@gmail.com)
+//Injecting Script
+//23NOV2015
+var s = document.createElement("script");
+s.src = chrome.extension.getURL("route-injected.js");
+s.onload = function() {
+    this.parentNode.removeChild(this);
+};
+(document.head || document.documentElement).appendChild(s);
