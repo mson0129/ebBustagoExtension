@@ -1,0 +1,13 @@
+table#mainTable span.buttonIn, table#mainTable span.buttonSave, table#mainTable span.buttonDel {display: block; padding: 0; border: 0; margin: 0; background-color: transparent; line-height: normal; width: 100%; margin-bottom: 0.2em; text-align: center;}
+	table#mainTable span.buttonIn > a, table#mainTable span.buttonSave > a, table#mainTable span.buttonDel > a {display: inline-block; width: 85%;}
+
+
+	table#mainTable span.buttonIn > a {padding: 0.2em 0.5em; border: 1px solid #2E7FC2; border-radius: 2em; background-color: #2E7FC2; color: #FFF; text-decoration: none;}
+	table#mainTable span.buttonIn > a:hover {background-color: #FFF; color: #2E7FC2;}
+	
+	table#mainTable span.buttonSave > a {padding: 0.2em 0.5em; border: 1px solid #829D1F; border-radius: 2em; background-color: #829D1F; color: #FFF; text-decoration: none;}
+	table#mainTable span.buttonSave > a:hover {background-color: #FFF; color: #829D1F;}
+	table#mainTable span.buttonDel > a {padding: 0.2em 0.5em; border: 1px solid #BC3636; border-radius: 2em; background-color: #BC3636; color: #FFF; text-decoration: none;}
+	table#mainTable span.buttonDel > a:hover {background-color: #FFF; color: #BC3636;}
+
+	div.top > table > tbody > tr:last-child {display: none;}

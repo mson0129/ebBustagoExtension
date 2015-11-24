@@ -1,11 +1,13 @@
 body {background-color: #FFF;}
 
 div.t3 {margin-top: 5em;}
-p {position: fixed; top: 0; left:0; right:0; padding: 0.5em; margin: 0; background-color: rgba(55, 55, 55, 0.8); box-shadow: 0 0 5px #888; font-size: 0.8em; color: #FFF;}
+p {position: fixed; top: 0; left:0; right:0; padding: 0.5em; margin: 0; background-color: rgba(55, 55, 55, 0.8); box-shadow: 0 0 5px #888; font-size: 0.8em; color: #FFF; text-align: left;}
 
-span.buttonSave {padding: 0; border: 0; margin: 0; background: inherit;}
-	span.buttonSave > a {display: inline-block; padding: 0.5em 1em; border-radius: 3em; background-color: #999; color: #FFF; text-decoration: none;}
-	span.buttonSave > a:hover {background-color: #3476DC;}
+span.buttonSave {padding: 0; border: 0; margin: 0; background: transparent;}
+	span.buttonSave > a, p > button {display: inline-block; padding: 0.5em 1em; border-radius: 3em; background-color: #999; color: #FFF; text-decoration: none;}
+	span.buttonSave > a:hover, p > button:hover {background-color: #3476DC;}
+
+p > button {position: fixed; top: 0; left: 0; border:0; margin: 0.5em;}
 
 table {table-layout: fixed;}
 colgroup {display: none;}

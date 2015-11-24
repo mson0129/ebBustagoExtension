@@ -4,8 +4,22 @@ div#updateBtnList {position: fixed; z-index: 9999; top: 0; right: 0; left: 0; pa
 	div#updateBtnList > span {display: none;}
 	div#updateBtnList > div {padding: 0.5em;}	
 	div#updateBtnList > div > a, p > span > a#insertBusBtn2 {display: inline-block; padding: 0.5em 1em; border-radius: 2em; margin-right: 0.5em; background-color: #777; color: #FFF; text-decoration: none;}
-	div#updateBtnList > div > a:hover, p > span > a#insertBusBtn2:hover {background-color: rgb(52, 118, 220);}
+	div#updateBtnList > div > a:hover, p > span > a#insertBusBtn2:hover {background-color: rgb(52, 118, 220) !important;}
 	div#updateBtnList > div#changeAllLayer > input {width: 4em !important;}
+
+	table > tbody > tr > td:first-child {padding-bottom:0 !important;}
+	form {margin: 0;}
+
+	table span.buttonIn, table span.buttonSave, table span.buttonDel {padding: 0; border: 0; margin: 0; background-color: transparent;}
+	table span.buttonIn > a {padding: 0.2em 0.5em; border: 1px solid #2E7FC2; border-radius: 2em; background-color: #2E7FC2; color: #FFF; text-decoration: none;}
+	table span.buttonIn > a:hover {background-color: #FFF; color: #2E7FC2;}
+	
+	table span.buttonSave > a {padding: 0.2em 0.5em; border: 1px solid #829D1F; border-radius: 2em; background-color: #829D1F; color: #FFF; text-decoration: none;}
+	table span.buttonSave > a:hover {background-color: #FFF; color: #829D1F;}
+	table span.buttonDel > a {padding: 0.2em 0.5em; border: 1px solid #BC3636; border-radius: 2em; background-color: #BC3636; color: #FFF; text-decoration: none;}
+	table span.buttonDel > a:hover {background-color: #FFF; color: #BC3636;}
+
 p {position: fixed; z-index: 10000; right: 0; top: 0; padding: 0.5em; margin: 0; color: #FFF;}
 	p > input {padding: 0.5em 1em; border: 0; border-radius: 2em; margin: 0;}
 	p > span.buttonIn {padding: 0; border: 0; margin: 0; background-color: transparent;}
+	p > span.buttonIn > a {border: 0;}

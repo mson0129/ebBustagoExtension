@@ -28,7 +28,7 @@ for(i=0; i<dist_times.length; i++) {
 document.getElementById("updateBtn2").setAttribute("tabindex", tabindex);
 
 //Michael Son(mson0129@gmail.com)
-//OneClick CarSetting
+//SettingEveryCarByOneClick
 //12NOV2015
 var layer = document.getElementById("updateBtnList");
 var newLayer1 = document.createElement("div");
@@ -77,22 +77,12 @@ $('input#tot_seat_cnt_all').on('input', function () {
 });
 
 //Michael Son(mson0129@gmail.com)
-//DoubleClick Scroll
-//13NOV2015
-var toggle=0;
-document.ondblclick = function(event) {
-	if(window.event) {
-		eventStatus = window.event.srcElement.tagName;
-	} else {
-		eventStatus = evnt.target.tagName;
-	}
+//Notifying Button
+//17NOV2015
+$("select#div_cd, select#bus_type, select#status, input#tot_seat_cnt, input#tot_seat_cnt_all, select#bus_seat_type").on("change", function() {
+	updateBtn.style.backgroundColor = "#829D1F";
+});
 
-	if(eventStatus!="INPUT"&&eventStatus!="TEXTAREA") {
-		if(toggle==0) {
-			var sc=9999999; toggle=1;
-		} else {
-			var sc=0; toggle=0;
-		}
-		window.scrollTo(0,sc);
-	}
-}
+$("#dep_time, #distance, #dist_time").on("change", function() {
+	updateBtn2.style.backgroundColor = "#829D1F";
+});
