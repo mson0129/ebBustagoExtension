@@ -1,0 +1,14 @@
+body {background-color: #FFF;}
+
+div.t3 {margin-top: 5em;}
+p {position: fixed; top: 0; left:0; right:0; padding: 0.5em; margin: 0; background-color: rgba(55, 55, 55, 0.8); box-shadow: 0 0 5px #888; font-size: 0.8em; color: #FFF;}
+
+span.buttonSave {padding: 0; border: 0; margin: 0; background: inherit;}
+	span.buttonSave > a {display: inline-block; padding: 0.5em 1em; border-radius: 3em; background-color: #999; color: #FFF; text-decoration: none;}
+	span.buttonSave > a:hover {background-color: #3476DC;}
+
+table {table-layout: fixed;}
+colgroup {display: none;}
+th, td {display:none;}
+th:first-child, th:nth-child(2), th:nth-child(3), tbody > tr:first-child > td:nth-child(3) {display: table-cell}
+td:first-child, td:nth-child(2) {display: table-cell}

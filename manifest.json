@@ -1,0 +1,58 @@
+{
+	"manifest_version": 2,
+
+	"name": "Bustago Tweak",
+	"description": "Tweak for manager.bustago.or.kr - Son, NamGyu //
+		You can do followings with this addon.
+		- Changing all infomation of cars at once
+		- QuickSearch from the route data
+		- Easy inputing route data & fare data",
+	"version": "1.4.0",
+
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"browser_action": {
+		"default_icon": "popup.png"
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.bustago.or.kr/*main.jsp"],
+			"js": [
+				"thirdparty/jquery-2.1.4.min.js",
+				"thirdparty/jquery.quicksearch.js",
+				"quicksearch.js"
+			],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.bustago.or.kr/*popupFare"],
+			"css": ["fare.css"]
+		},
+		{
+			"matches": ["*://*.bustago.or.kr/*routeInfoManagerList.do?mode=getListSub*"],
+			"css": ["route.css"],
+			"js": [
+				"thirdparty/jquery-2.1.4.min.js",
+				"route.js"
+			]
+		}
+	],
+	"permissions": [
+		"tabs",
+		"*://*.bustago.or.kr/*"
+	],
+	"web_accessible_resources": [
+		"thirdparty/*",
+		"fare.css",
+		"route.css",
+		"quicksearch.js"
+	]
+}
