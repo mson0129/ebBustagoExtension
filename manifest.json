@@ -7,7 +7,7 @@
 		- Changing all infomation of cars at once
 		- QuickSearch from the route data
 		- Easy inputing route data & fare data",
-	"version": "1.7.1",
+	"version": "1.7.2",
 
 	"icons": {
 		"16": "icon16.png",
