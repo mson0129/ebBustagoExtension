@@ -95,11 +95,13 @@ $("button#thirteenAll").on("click", function() {
 });
 $("button#multiplyAll").on("click", function() {
 	for(i=0; i<fares.length; i++) {
-		for(j=1; j<6; j++) {
-			var target = document.getElementsByName("fare_type_"+j+"0");
-			target[i].value = Math.round(fares[i].value*((10-j)/10))*100;
+		if(fares[i].value < 1000) {
+			for(j=1; j<6; j++) {
+				var target = document.getElementsByName("fare_type_"+j+"0");
+				target[i].value = Math.round(fares[i].value*((10-j)/10))*100;
+			}
+			fares[i].value = fares[i].value*100;
 		}
-		fares[i].value = fares[i].value*100;
 	}
 });
 $("button#pull").on("click", function() {
